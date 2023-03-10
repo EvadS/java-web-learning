@@ -12,10 +12,6 @@ Run the following command to start the embedded Tomcat container
 ```
 mvn tomcat7:run
 ```
-if
-<port>9090</port>  presented in plugin settings 
-to check webapp-sample
----------------
 
 
 To check start page 
@@ -23,21 +19,27 @@ To check start page
 http://localhost:8080/
 ```
 
-TEST API
-```
-    http://localhost:8080/webapp-sample/api/myresource
-```
-
-
-если убрать application context в настройках дебага
-
 http://localhost:8080/webapp_sample_war/     <-- index.jsp
 прибавляем url-pattern + непосредственно апи 
 
 ## ТОМКАТ ЧЕРЕЗ ИДЕЙКУ
 ```
     http://localhost:8080/webapp_sample_war/api/message
+    http://localhost:8080/webapp_sample_war/api/users
+    
+    
 ```
 
 ## tomcat plugin 
 http://localhost:8080/api/message/hello
+
+
+
+Замечания 
+во втором можно использовать аннотации
+```
+@ApplicationPath("api")
+public class RestApplication extends Application {
+
+}
+```
