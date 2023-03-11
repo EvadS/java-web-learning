@@ -13,7 +13,6 @@ Run the following command to start the embedded Tomcat container
 mvn tomcat7:run
 ```
 
-
 To check start page 
 ```
 http://localhost:8080/
@@ -34,7 +33,6 @@ http://localhost:9998/webapp_sample_war/api/hello
 
 ## tomcat plugin 
 http://localhost:8080/api/message/hello
-
 
 
 Замечания 
