@@ -27,10 +27,8 @@ http://localhost:8080/webapp_sample_war/     <-- index.jsp
     http://localhost:8080/webapp_sample_war/api/message
     http://localhost:8080/webapp_sample_war/api/users
     
-    
     http://localhost:8080/webapp_sample_war/api/hello
- 
-```
+ ```
 
 http://localhost:9998/webapp_sample_war/api/hello
 
