@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -15,7 +16,7 @@ import static org.slf4j.LoggerFactory.getLogger;
 
 //@Configuration
 //@ComponentScan("com.se.sample")
-public class MyConfig {
+public class MyConfig  implements WebMvcConfigurer {
 
     private static final Logger LOG = getLogger(MyConfig.class);
 
