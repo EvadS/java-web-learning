@@ -1,23 +1,26 @@
 package com.se.sample.service;
 
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.se.sample.auth.PermissionChecker;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
+
 import javax.annotation.PostConstruct;
 import java.math.BigInteger;
 
 @Service
 public class DocumentService extends AbstractUpdateService {
 
-    private final static Logger logger = LoggerFactory.getLogger(DocumentService.class);
+    static final Logger logger = LogManager.getLogger(PermissionChecker.class.getName());
+
     @PostConstruct
-    private  void init(){
-               logger.info("DocumentService post construct");
+    private void init() {
+        logger.info("DocumentService post construct");
     }
 
     @Override
-    public Class getDtoClass()  {
+    public Class getDtoClass() {
         return null;
     }
 

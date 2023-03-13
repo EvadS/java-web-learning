@@ -1,6 +1,5 @@
 package com.se.sample.config;
 
-
 import com.se.sample.auth.PermissionChecker;
 import com.se.sample.service.AbstractUpdateService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,6 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import java.util.List;
-
 
 @Configuration
 @ComponentScan("com.se.sample")
