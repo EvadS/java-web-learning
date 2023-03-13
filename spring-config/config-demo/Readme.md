@@ -1,8 +1,7 @@
 # spring learn 
 
 ## Description 
- * Tomcat read web.xml to configure DispatcherServlet
- * applicationContextMVC.xml uses to configure bean's and thymeleaf
+  configuration with java code instead of xml
 
 ## url 
 ```http
