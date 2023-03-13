@@ -1,7 +1,6 @@
-# spring learn 
+# spring MVC learn 
+base spring mvc app to show how to configure with java classes instaed of xml 
 
-## Description 
-  configuration with java code instead of xml
 
 ## url 
 ```http

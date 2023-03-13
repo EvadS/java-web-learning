@@ -9,12 +9,12 @@ import javax.annotation.PostConstruct;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
-@Component
+//@Component
 public class PermissionChecker {
     private static final Logger LOG = getLogger(PermissionChecker.class);
 
-    @Autowired
-    private DocumentService documentService;
+  //  @Autowired
+  //  private DocumentService documentService;
 
     @PostConstruct
     private  void init(){
