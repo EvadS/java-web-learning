@@ -15,6 +15,7 @@ import static org.slf4j.LoggerFactory.getLogger;
 @Component
 public class PermissionChecker {
 
+
     static final Logger logger = LogManager.getLogger(PermissionChecker.class.getName());
 
     @Autowired

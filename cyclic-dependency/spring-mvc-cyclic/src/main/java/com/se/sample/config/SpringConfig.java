@@ -1,12 +1,14 @@
 package com.se.sample.config;
 
 import com.se.sample.auth.PermissionChecker;
+import com.se.sample.service.AbstractSecuredTypeService;
 import com.se.sample.service.AbstractUpdateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -17,22 +19,26 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import java.util.List;
 
 @Configuration
+@EnableAsync
 @ComponentScan("com.se.sample")
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
-    private final ApplicationContext applicationContext;
-
     @Autowired
-    public SpringConfig(ApplicationContext applicationContext) {
-        this.applicationContext = applicationContext;
-    }
+    private  ApplicationContext applicationContext;
+
+
+
+ //   public SpringConfig(ApplicationContext applicationContext) {
+     //   this.applicationContext = applicationContext;
+   // }
 
 
     @Autowired
     private PermissionChecker permissionChecker;
 
     @Autowired
-    private List<AbstractUpdateService> someList;
+    private List<AbstractSecuredTypeService> services;
+
 
     @Bean
     // setup theamleaf
