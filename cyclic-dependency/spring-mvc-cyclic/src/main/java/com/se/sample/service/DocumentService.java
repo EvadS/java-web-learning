@@ -13,8 +13,7 @@ public class DocumentService extends AbstractUpdateService {
     private final static Logger logger = LoggerFactory.getLogger(DocumentService.class);
     @PostConstruct
     private  void init(){
-        System.out.println("**** DocumentService post construct");
-        logger.info("DocumentService post construct");
+               logger.info("DocumentService post construct");
     }
 
     @Override
