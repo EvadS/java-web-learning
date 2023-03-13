@@ -2,15 +2,18 @@ package com.se.sample.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author Neil Alishev
+ * Mvc Controller
  */
 @Controller
-public class HelloController {
+@RequestMapping("/first")
+public class FirstController {
 
     @GetMapping("/hello")
-    public String sayHello() {
-        return "hello_world";
+    public String helloPage() {
+        return "first/hello";
     }
 }
