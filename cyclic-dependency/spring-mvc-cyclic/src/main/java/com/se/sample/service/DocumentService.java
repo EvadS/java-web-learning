@@ -13,7 +13,7 @@ import java.math.BigInteger;
 @Service
 public class DocumentService extends AbstractUpdateService {
 
-    static final Logger logger = LogManager.getLogger(PermissionChecker.class.getName());
+    static final Logger logger = LogManager.getLogger(DocumentService.class.getName());
 
     @Autowired
     private PermissionChecker permissionChecker;
@@ -32,6 +32,4 @@ public class DocumentService extends AbstractUpdateService {
     public Object find(BigInteger id) {
         return null;
     }
-
-
 }

@@ -7,8 +7,7 @@ import java.math.BigInteger;
 
 @Service
 public class ContactService extends AbstractUpdateService{
-    @Autowired
-    private OrderService orderService;
+
 
     @Override
     public Class getDtoClass() {

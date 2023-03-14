@@ -1,8 +1,5 @@
 package com.se.sample.config;
 
-import com.se.sample.auth.PermissionChecker;
-import com.se.sample.service.AbstractSecuredTypeService;
-import com.se.sample.service.AbstractUpdateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +13,6 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
-import java.util.List;
 
 @Configuration
 @ComponentScan("com.se.sample")
@@ -25,17 +21,6 @@ import java.util.List;
 public class SpringConfig implements WebMvcConfigurer {
     @Autowired
     private  ApplicationContext applicationContext;
-
- //   public SpringConfig(ApplicationContext applicationContext) {
-     //   this.applicationContext = applicationContext;
-   // }
-
-    @Autowired
-    private PermissionChecker permissionChecker;
-
-    @Autowired
-    private List<AbstractSecuredTypeService> services;
-
 
     @Bean
     // setup theamleaf

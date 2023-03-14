@@ -8,8 +8,7 @@ import java.math.BigInteger;
 @Service
 public class OrganizationService extends AbstractUpdateService{
 
-    @Autowired
-    private OrderService orderService;
+
 
     @Override
     public Class getDtoClass() {
