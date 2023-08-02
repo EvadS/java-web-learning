@@ -3,6 +3,7 @@ package com.se.sample;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * @author Neil Alishev
@@ -12,8 +13,6 @@ public class MusicPlayer {
     @Value("${musicPlayer.name}")
     private String name;
 
-    @Value("${musicPlayer.volume}")
-    private int volume;
 
     public String getName() {
         return name;
